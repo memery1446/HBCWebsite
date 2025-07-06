@@ -5,24 +5,51 @@ import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
 const navigationItems = [
-    { name: 'Home', href: '/' },
     {
-        name: 'About Us',
+        name: 'bulletin',
+        href: '/bulletin',
+    },
+    {
+        name: 'about us',
         href: '/about-us',
         children: [
+            { name: 'Service Times', href: '/about-us/service-times' },
+            { name: 'What We Believe', href: '/about-us/what-we-believe' },
             { name: 'Leadership', href: '/about-us/leadership' }
         ]
     },
     {
-        name: 'Ministries',
+        name: 'ministries',
         href: '/ministries',
+        children: [
+            { name: 'Preschool Ministry', href: '/ministries/preschool-ministry' },
+            { name: 'Choir', href: '/ministries/choir' },
+            { name: 'Childrens Ministry', href: '/ministries/childrens-ministry' },
+            { name: 'Youth Ministry', href: '/ministries/youth-ministry' },
+        ]
+    },
+    {
+        name: 'events',
+        href: '/events',
+        // children: [
+        //     { name: 'Preschool Ministry', href: '/ministries/preschool-ministry' }
+        // ]
+    },
+    {
+        name: 'contact us',
+        href: '/contact us',
         children: [
             { name: 'Preschool Ministry', href: '/ministries/preschool-ministry' }
         ]
     },
-    { name: 'Contact Us', href: '/contact-us' },
-    { name: 'Weekly Bulletin', href: '/bulletin' },
-    { name: 'Events', href: '/events' },
+    {
+        name: 'sermons',
+        href: '/sermons',
+        children: [
+            { name: 'Preschool Ministry', href: '/ministries/preschool-ministry' }
+        ]
+    },
+
 ]
 
 export default function Navigation() {
