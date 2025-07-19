@@ -1,5 +1,5 @@
 import './globals.css'
-import Header from '@/components/Header'
+import UnifiedHeader from '@/components/UnifiedHeader'
 import Footer from '@/components/Footer'
 
 export const metadata = {
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <body className="min-h-screen bg-white">
-        <Header />
+        <UnifiedHeader />
         <main className="flex-1">
             {children}
         </main>

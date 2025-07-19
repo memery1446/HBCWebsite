@@ -1,6 +1,6 @@
 import PageTemplate from '@/components/PageTemplate'
 
-export default function ServiceTimesPage() {
+export default function ServiceTimes() {
     return (
         <PageTemplate title="Service Times" image="https://source.unsplash.com/random/1600x900?church"
         >

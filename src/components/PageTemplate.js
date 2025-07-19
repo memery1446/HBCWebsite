@@ -5,8 +5,9 @@ export default function PageTemplate({ title, image, children }) {
     return (
         <div>
             <div
-                className="h-[33vh] bg-cover bg-center flex items-center justify-center text-black text-3xl font-bold tracking-widest"
-                style={{ backgroundImage: `url(${image})` }}
+                className="w-full h-[33vh] bg-cover bg-center flex items-center justify-center text-white text-3xl font-bold tracking-widest"
+                style={{ backgroundImage: `url("${image}")` }}
+
             >
                 {title.toUpperCase()}
             </div>
