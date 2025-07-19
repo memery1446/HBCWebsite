@@ -63,14 +63,41 @@ export default function Homepage() {
 
             {/* Main Content Overlay */}
             <div className="absolute inset-0 flex items-center justify-center z-10">
-                <div className="text-center text-white px-4">
-                    <h2 className="text-6xl md:text-8xl font-bold mb-4 tracking-wider">
-                        {slides[currentSlide].title}
-                    </h2>
-                    <p className="text-xl md:text-2xl font-light tracking-wide">
-                        {slides[currentSlide].subtitle}
-                    </p>
-                </div>
+                {slides[currentSlide].title === 'We Are His Workmanship' ? (
+                    // Special layout for "We Are His Workmanship" slide
+                    <div className="flex items-center justify-center w-full max-w-6xl px-4">
+                        <div className="flex-1">
+                            <h2 className="font-impact text-ultra font-bold mb-6 tracking-tight text-left inline-block text-white">
+                                We Are His<br />
+                                Workmanship
+                            </h2>
+                            <div className="text-white text-lg leading-relaxed max-w-lg">
+                                <p>For we are his workmanship, created in Christ Jesus for good works,</p>
+                                <p>which God prepared beforehand, that</p>
+                                <p>we should walk in them. - Ephesians 2:10</p>
+                            </div>
+                        </div>
+                        <div className="flex-shrink-0 ml-12">
+                            <div className="w-80 h-80 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border-4 border-white/30">
+                                <img
+                                    src="/images/family-circle.jpg"
+                                    alt="Church family"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                ) : (
+                    // Standard layout for other slides (preserving your work!)
+                    <div className="text-center text-white px-4">
+                        <h2 className="font-impact text-ultra font-bold mb-4 tracking-tight">
+                            {slides[currentSlide].title}
+                        </h2>
+                        <p className="text-xl md:text-2xl font-light tracking-wide">
+                            {slides[currentSlide].subtitle}
+                        </p>
+                    </div>
+                )}
             </div>
 
             {/* Navigation Arrows */}
