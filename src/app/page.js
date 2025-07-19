@@ -14,8 +14,8 @@ export default function Homepage() {
         },
         {
             image: '/images/harmony-aerial.jpg',
-            title: 'Join Us',
-            subtitle: 'A Heart for God • A Love for People'
+            title: 'We Are His Workmanship',
+            subtitle: 'For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. - Ephesians 2:10'
         }
     ];
 
