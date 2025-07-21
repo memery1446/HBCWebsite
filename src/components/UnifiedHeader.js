@@ -55,7 +55,7 @@ export default function UnifiedHeader() {
                     {/* Church Name - LEFT with margin */}
                     <div className="absolute left-80 top-32">
                         <Link href="/">
-                            <h1 className={`font-arial text-6xl font-bold tracking-tight leading-tight whitespace-nowrap ${isHomepage ? 'text-red-400' : 'text-red-600'}`}>
+                            <h1 className={`font-arial text-6xl font-normal tracking-tight leading-tight whitespace-nowrap ${isHomepage ? 'text-red-400' : 'text-red-600'}`}>
                                 HARMONY <span className={isHomepage ? 'text-white' : 'text-gray-900'}>BAPTIST CHURCH</span>
                             </h1>
                         </Link>

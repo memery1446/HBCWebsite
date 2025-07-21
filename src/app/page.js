@@ -71,14 +71,12 @@ export default function Homepage() {
                                 We Are His<br />
                                 Workmanship
                             </h2>
-                            <div className="text-white text-lg leading-relaxed max-w-lg">
-                                <p>For we are his workmanship, created in Christ Jesus for good works,</p>
-                                <p>which God prepared beforehand, that</p>
-                                <p>we should walk in them. - Ephesians 2:10</p>
-                            </div>
+                        <div className="text-white text-3xl leading-relaxed max-w-8xl">
+                            <p>For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them. - Ephesians 2:10</p>
+                        </div>
                         </div>
                         <div className="flex-shrink-0 ml-12">
-                            <div className="w-80 h-80 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border-4 border-white/30">
+                            <div className="w-[48rem] h-[48rem] rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border-4 border-white/30">
                                 <img
                                     src="/images/family-circle.jpg"
                                     alt="Church family"
@@ -93,7 +91,7 @@ export default function Homepage() {
                         <h2 className="font-impact text-ultra font-bold mb-4 tracking-tight">
                             {slides[currentSlide].title}
                         </h2>
-                        <p className="text-xl md:text-2xl font-light tracking-wide">
+                        <p className="text-2xl md:text-3xl font-light tracking-wide">
                             {slides[currentSlide].subtitle}
                         </p>
                     </div>
