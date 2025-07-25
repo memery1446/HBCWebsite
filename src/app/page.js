@@ -83,7 +83,7 @@ export default function Homepage() {
                                     className="w-full h-full object-cover"
                                     style={{
                                         objectPosition: 'center center',
-                                        transform: 'scale(2.25)',
+                                        transform: 'scale(1.90)',
                                         transformOrigin: 'center center'
                                     }}
                                 />

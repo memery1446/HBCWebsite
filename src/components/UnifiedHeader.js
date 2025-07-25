@@ -48,15 +48,15 @@ export default function UnifiedHeader() {
     ]
 
     return (
-        <header className={`${isHomepage ? 'absolute top-0 left-0 right-0 z-20' : 'bg-white shadow-sm'}`}>
+        <header className={`${isHomepage ? 'absolute top-0 left-0 right-0 z-20' : 'absolute top-0 left-0 right-0 z-20'}`}>
             <div className="container-custom">
                 {/* Main header row */}
                 <div className="flex items-center justify-between pt-6 pb-3">
                     {/* Church Name - LEFT with margin */}
                     <div className="absolute left-80 top-32">
                         <Link href="/">
-                            <h1 className={`font-arial text-6xl font-normal tracking-tight leading-tight whitespace-nowrap ${isHomepage ? 'text-red-400' : 'text-red-600'}`}>
-                                HARMONY <span className={isHomepage ? 'text-white' : 'text-gray-900'}>BAPTIST CHURCH</span>
+                            <h1 className="font-arial text-6xl font-normal tracking-tight leading-tight whitespace-nowrap text-red-400">
+                                HARMONY <span className="text-white">BAPTIST CHURCH</span>
                             </h1>
                         </Link>
                     </div>
@@ -72,11 +72,7 @@ export default function UnifiedHeader() {
                                             onMouseEnter={() => setOpenDropdown(item.name)}
                                             onMouseLeave={() => setOpenDropdown(null)}
                                         >
-                                            <button className={`font-arial flex items-center space-x-1 py-1 text-4xl font-medium transition-colors ${
-                                                isHomepage
-                                                    ? 'text-white hover:text-gray-300'
-                                                    : 'text-gray-700 hover:text-primary-60'
-                                            }`}>
+                                            <button className="font-arial flex items-center space-x-1 py-1 text-4xl font-medium transition-colors text-white hover:text-gray-300">
                                                 <span className="lowercase">{item.name}</span>
                                                 <ChevronDown className="h-3 w-3 mt-0.5" />
                                             </button>
@@ -99,12 +95,8 @@ export default function UnifiedHeader() {
                                             href={item.href}
                                             className={`font-arial block py-1 text-4xl font-medium lowercase transition-colors ${
                                                 pathname === item.href
-                                                    ? isHomepage
-                                                        ? 'text-red-400'
-                                                        : 'text-primary-600'
-                                                    : isHomepage
-                                                        ? 'text-white hover:text-gray-300'
-                                                        : 'text-gray-700 hover:text-primary-600'
+                                                    ? 'text-red-400'
+                                                    : 'text-white hover:text-gray-300'
                                             }`}
                                         >
                                             {item.name}
