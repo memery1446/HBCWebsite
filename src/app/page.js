@@ -78,9 +78,14 @@ export default function Homepage() {
                         <div className="flex-shrink-0 ml-12">
                             <div className="w-[48rem] h-[48rem] rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border-4 border-white/30">
                                 <img
-                                    src="/images/family-circle.jpg"
+                                    src="/images/friends-at-sunrise.png"
                                     alt="Church family"
                                     className="w-full h-full object-cover"
+                                    style={{
+                                        objectPosition: 'center center',
+                                        transform: 'scale(2.25)',
+                                        transformOrigin: 'center center'
+                                    }}
                                 />
                             </div>
                         </div>

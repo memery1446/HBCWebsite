@@ -72,7 +72,7 @@ export default function UnifiedHeader() {
                                             onMouseEnter={() => setOpenDropdown(item.name)}
                                             onMouseLeave={() => setOpenDropdown(null)}
                                         >
-                                            <button className={`font-arial flex items-center space-x-1 py-1 text-3xl font-medium transition-colors ${
+                                            <button className={`font-arial flex items-center space-x-1 py-1 text-4xl font-medium transition-colors ${
                                                 isHomepage
                                                     ? 'text-white hover:text-gray-300'
                                                     : 'text-gray-700 hover:text-primary-60'
@@ -86,7 +86,7 @@ export default function UnifiedHeader() {
                                                         <Link
                                                             key={child.name}
                                                             href={child.href}
-                                                            className="font-arial block px-4 py-2 text-white hover:bg-gray-800 transition-colors text-sm"
+                                                            className="font-arial block px-4 py-2 text-white hover:bg-gray-800 transition-colors text-3xl"
                                                         >
                                                             {child.name}
                                                         </Link>
@@ -97,7 +97,7 @@ export default function UnifiedHeader() {
                                     ) : (
                                         <Link
                                             href={item.href}
-                                            className={`font-arial block py-1 text-3xl font-medium lowercase transition-colors ${
+                                            className={`font-arial block py-1 text-4xl font-medium lowercase transition-colors ${
                                                 pathname === item.href
                                                     ? isHomepage
                                                         ? 'text-red-400'
