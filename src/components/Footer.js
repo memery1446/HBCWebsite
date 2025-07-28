@@ -9,7 +9,7 @@ export default function Footer() {
                             <p>20932 County Road 70</p>
                             <p>Andalusia, AL 36421</p>
                             <p>Phone: (334) 222-8117</p>
-                            <p>Email: harmonybcops@gmail.com</p>
+                            {/*<p>Email: harmonybcops@gmail.com</p>*/}
                         </div>
                     </div>
 
